@@ -1,0 +1,53 @@
+{% extends 'contactos/base.html' %}
+
+{% block Encabezado %}
+    <h4>Lista de Contactos</h4>
+{% endblock Encabezado %}
+
+{% block Contenido %}
+    <table class="table table-hover table-condensed table-bordered">
+        <thead>
+            <tr>
+                <td colspan="3" class="text-center"><strong>Acciones</strong></td>
+
+                <td class="text-center"><strong>Nombres</strong></td>
+                <td class="text-center"><strong>Correo Electrónico</strong></td>
+            </tr>
+        </thead>
+
+        <tbody >
+
+            {% if object_list %}
+                {% for c in object_list %}
+                    <tr>
+                        <td class="text-center">
+{#                            <a href="{% url 'nspContactos:urlDetalles' pk=c.id %}" >#}
+                                <span class="glyphicon glyphicon-list"></span>
+                            </a>
+                        </td>
+                        <td class="text-center">
+{#                            <a href="{% url 'nspContactos:urlEditar' pk=c.id %}" >#}
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a href="" >
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </a>
+                        </td>
+                        <td>{{ c.Nombres }} {{ c.Apellidos }}</td>
+                        <td>{{ c.Email }}</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <h3>No existen contactos</h3>
+            {% endif %}
+
+        </tbody>
+    </table>
+
+
+    <a href = "{% url 'nspContactos:urlNuevo' %}">Agregar contacto</a>
+    <br>
+
+{% endblock Contenido %}

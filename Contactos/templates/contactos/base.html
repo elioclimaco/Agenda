@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title></title>
+
+        <link href="{% static 'contactos/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'contactos/css/bootstrap-theme.min.css' %}" rel="stylesheet" type="text/ccs" media="screen">
+        <link href="{% static 'contactos/css/justified-nav.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Contenedor Principal -->
+        <div class="container">
+
+            <!-- Barra de Navegación -->
+            <div class="masthead">
+                <h3 class="text-muted">Agenda del Poder Judicial</h3>
+
+                <ul class="nav nav-justified">
+                    <li class="active"><a href="#">Contactos</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                </ul>
+            </div>
+            <!--/Barra de Navegación -->
+
+
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <h1>Marketing stuff!</h1>
+                <p class="lead">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus,
+                    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+                </p>
+            </div>
+            <!--/Jumbotron -->
+
+
+            <!-- Contenido -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="well">
+
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Listado" data-toggle="tab">Mis Contactos</a></li>
+                            <li><a href="#Nuevo" data-toggle="tab">Nuevo Contacto</a></li>
+                        </ul>
+                        <!--/Tabs -->
+
+                        <!-- Tab Paneles-->
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="Listado">
+                                {% block Encabezado %}
+                                {% endblock Encabezado %}
+
+                                {% block Contenido %}
+                                {% endblock Contenido %}
+                            </div>
+
+                            <div class="tab-pane fade" id="Nuevo">
+                                nuevo
+                            </div>
+                        </div>
+                        <!-- Tab Paneles-->
+
+                    </div>
+
+                </div>
+            </div>
+            <!--/Contenido -->
+        </div>
+        <!--/Contenedor Principal -->
+
+
+
+
+        <script src="{% static 'contactos/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
