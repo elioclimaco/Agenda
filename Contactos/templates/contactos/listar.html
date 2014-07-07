@@ -1,8 +1,14 @@
 {% extends 'contactos/base.html' %}
 
 {% block Encabezado %}
-    <h4>Lista de Contactos</h4>
+    Lista de Contactos
 {% endblock Encabezado %}
+
+
+{% block Descripcion %}
+    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+{% endblock Descripcion %}
+
 
 {% block Contenido %}
     <table class="table table-hover table-condensed table-bordered">
@@ -15,28 +21,28 @@
             </tr>
         </thead>
 
-        <tbody >
+        <tbody>
 
             {% if object_list %}
                 {% for c in object_list %}
                     <tr>
                         <td class="text-center">
-{#                            <a href="{% url 'nspContactos:urlDetalles' pk=c.id %}" >#}
-                                <span class="glyphicon glyphicon-list"></span>
+                            <a href="{% url 'nspContactos:urlDetalles' pk=c.id %}" >
+                                <span class="glyphicon glyphicon-list primario"></span>
                             </a>
                         </td>
                         <td class="text-center">
-{#                            <a href="{% url 'nspContactos:urlEditar' pk=c.id %}" >#}
-                                <span class="glyphicon glyphicon-pencil"></span>
+                            <a href="{% url 'nspContactos:urlEditar' pk=c.id %}" >
+                                <span class="glyphicon glyphicon-pencil advertencia"></span>
                             </a>
                         </td>
                         <td class="text-center">
-                            <a href="" >
-                                <span class="glyphicon glyphicon-remove"></span>
+                            <a href="{% url 'nspContactos:urlBorrar' pk=c.id %}" >
+                                <span class="glyphicon glyphicon-remove peligro"></span>
                             </a>
                         </td>
                         <td>{{ c.Nombres }} {{ c.Apellidos }}</td>
-                        <td>{{ c.Email }}</td>
+                        <td>{{ c.Email }}</td> {# {{ c.get_absolute_url }}</td> #}
                     </tr>
                 {% endfor %}
             {% else %}

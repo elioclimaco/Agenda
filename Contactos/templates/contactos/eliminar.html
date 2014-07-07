@@ -1,1 +1,18 @@
 {% extends 'contactos/base.html' %}
+
+{% block Encabezado %}
+    Borrar Contactos
+{% endblock Encabezado %}
+
+{% block Contenido %}
+    <p>
+        <b>{{ contacto }} será eliminado, esta seguro?</b>
+    </p>
+
+    <form action="{% url 'nspContactos:urlBorrar' pk=contacto.id %}" method="POST">
+        {% csrf_token %}
+
+        <input type="submit" value="Eliminar" class="btn btn-danger">
+        <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-success">Cancelar</a>
+    </form>
+{% endblock Contenido %}

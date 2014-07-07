@@ -1,8 +1,23 @@
 {% extends 'contactos/base.html' %}
 
+{% block Encabezado %}
+    {# Cambiamos el encabezado del formulario #}
+    {% if contacto.id %}
+        Editar Contacto
+    {% else %}
+        Nuevo Contacto
+    {% endif %}
+{% endblock Encabezado %}
 
 {% block Contenido %}
-    <form action="{% url 'nspContactos:urlNuevo' %}" method="POST">
+    {% comment %}
+    Usamos el procesador de contexto "action"
+    definido en el contexto de las vistas de
+    NuevoContacto y EditarContacto, para
+    redireccionar de acuerdo a la vista invocada
+    {% endcomment %}
+    <form action="{{ action }}" method="POST">
+    {#<form action="{% url 'nspContactos:urlNuevo' %}" method="POST">#}
         {% csrf_token %}
 
         {{ form.as_p }}

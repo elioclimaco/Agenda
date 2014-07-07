@@ -1,1 +1,14 @@
 {% extends 'contactos/base.html' %}
+
+{% block Encabezado %}
+    Detalles del Contactos
+{% endblock Encabezado %}
+
+{% block Contenido %}
+    <h3>{{ contacto }}</h3>
+    <br>
+    <p>Correo electrónico: {{ contacto.Email }}</p>
+    <br>
+    <br>
+    <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-primary">Lista de contactos</a>
+{% endblock Contenido %}

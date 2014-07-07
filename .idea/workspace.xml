@@ -23,24 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Contactos/views.py">
+      <file leaf-file-name="nuevo.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="880" selection-end="880" vertical-scroll-proportion="0.81403506" vertical-offset="0" max-vertical-offset="570">
-              <folding>
-                <element signature="e#24#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contactos/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding>
-                <element signature="e#24#66#0" expanded="true" />
-              </folding>
+            <state line="24" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.702011" vertical-offset="0" max-vertical-offset="547">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,17 +46,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Contactos/static/contactos/css/justified-nav.css" />
-        <option value="$PROJECT_DIR$/Contactos/templates/contactos/base.html" />
-        <option value="$PROJECT_DIR$/Contactos/models.py" />
         <option value="$PROJECT_DIR$/Contactos/forms.py" />
+        <option value="$PROJECT_DIR$/Contactos/templates/contactos/editar.html" />
         <option value="$PROJECT_DIR$/Contactos/admin.py" />
+        <option value="$PROJECT_DIR$/Contactos/static/contactos/css/personalizacion.css" />
+        <option value="$PROJECT_DIR$/Contactos/urls.py" />
+        <option value="$PROJECT_DIR$/Contactos/models.py" />
+        <option value="$PROJECT_DIR$/Contactos/views.py" />
+        <option value="$PROJECT_DIR$/Contactos/templates/contactos/base.html" />
         <option value="$PROJECT_DIR$/Contactos/templates/contactos/detalles.html" />
         <option value="$PROJECT_DIR$/Contactos/templates/contactos/eliminar.html" />
-        <option value="$PROJECT_DIR$/Contactos/templates/contactos/editar.html" />
-        <option value="$PROJECT_DIR$/Contactos/urls.py" />
-        <option value="$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html" />
-        <option value="$PROJECT_DIR$/Contactos/views.py" />
         <option value="$PROJECT_DIR$/Contactos/templates/contactos/listar.html" />
+        <option value="$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html" />
       </list>
     </option>
   </component>
@@ -203,7 +191,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,6 +231,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\Agenda\Contactos\static\contactos\img" />
+      <recent name="C:\Django\Agenda\Contactos\static\contactos\js" />
       <recent name="C:\Django\Agenda\Contactos\static\contactos\css" />
     </key>
   </component>
@@ -465,7 +455,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -473,11 +463,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -517,6 +507,66 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Contactos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="23" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1024">
+          <folding>
+            <element signature="e#24#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/listar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="37" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="944">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="23" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/static/contactos/css/personalizacion.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="23" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="720">
+          <folding>
+            <element signature="e#24#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="88" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1408">
@@ -526,16 +576,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/detalles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="48" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1216">
           <folding>
-            <element signature="e#24#83#0" expanded="true" />
+            <element signature="e#24#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -556,9 +604,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="15" column="12" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/listar.html">
@@ -572,7 +618,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="17" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0" vertical-offset="688" max-vertical-offset="1120">
           <folding>
-            <element signature="e#24#83#0" expanded="true" />
+            <element signature="e#24#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -586,9 +632,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/settings.py">
@@ -600,9 +644,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/settings.py">
@@ -614,9 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="21" column="56" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="432" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/settings.py">
@@ -633,102 +673,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="128" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="88" selection-start="1706" selection-end="1706" vertical-scroll-proportion="-8.68" vertical-offset="551" max-vertical-offset="1408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/detalles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="112">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/eliminar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.64" vertical-offset="0" max-vertical-offset="112">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/editar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="77" selection-end="77" vertical-scroll-proportion="0.08938547" vertical-offset="0" max-vertical-offset="537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/listar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="78" selection-start="849" selection-end="849" vertical-scroll-proportion="0.5496183" vertical-offset="96" max-vertical-offset="944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="356" selection-end="356" vertical-scroll-proportion="0.35229358" vertical-offset="0" max-vertical-offset="545">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Agenda/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/static/contactos/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="2" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.46630237" vertical-offset="240" max-vertical-offset="164832" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="123" selection-end="123" vertical-scroll-proportion="0.13722126" vertical-offset="0" max-vertical-offset="583">
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/static/contactos/img/banner.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/static/contactos/css/personalizacion.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="1" selection-start="207" selection-end="207" vertical-scroll-proportion="0.51965815" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/static/contactos/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-160.95804" vertical-offset="92068" max-vertical-offset="92656">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="10" column="90" selection-start="514" selection-end="514" vertical-scroll-proportion="0.22377622" vertical-offset="0" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="788" selection-end="788" vertical-scroll-proportion="0.5874126" vertical-offset="0" max-vertical-offset="572">
           <folding>
-            <element signature="e#24#66#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contactos/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="880" selection-end="880" vertical-scroll-proportion="0.81403506" vertical-offset="0" max-vertical-offset="570">
+        <state line="69" column="39" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="676" max-vertical-offset="1248">
           <folding>
-            <element signature="e#24#83#0" expanded="true" />
+            <element signature="e#24#119#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="2003" selection-end="2109" vertical-scroll-proportion="0.67490494" vertical-offset="525" max-vertical-offset="1328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/detalles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="86" selection-end="86" vertical-scroll-proportion="0.08775137" vertical-offset="0" max-vertical-offset="547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/editar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="18" selection-start="77" selection-end="77" vertical-scroll-proportion="0.08571429" vertical-offset="0" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/eliminar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.08775137" vertical-offset="0" max-vertical-offset="547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/listar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="15" selection-start="747" selection-end="747" vertical-scroll-proportion="0.54372627" vertical-offset="82" max-vertical-offset="1040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contactos/templates/contactos/nuevo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.702011" vertical-offset="0" max-vertical-offset="547">
+          <folding />
         </state>
       </provider>
     </entry>

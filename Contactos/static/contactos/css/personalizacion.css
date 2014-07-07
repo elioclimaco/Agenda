@@ -1,0 +1,20 @@
+/* Color de los glyphicons */
+.peligro, .peligro a
+{
+  color: #D9534F;
+}
+
+.advertencia, .advertencia a
+{
+    color: #EEA236
+}
+
+.ok, .ok a
+{
+    color: #4CAE4C
+}
+
+.primario, .primario a
+{
+    color: #357EBD
+}

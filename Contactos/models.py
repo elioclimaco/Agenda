@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 
 
 class Contacto(models.Model):
@@ -9,6 +10,8 @@ class Contacto(models.Model):
     def __unicode__(self):
         return ' '.join([self.Nombres, self.Apellidos,])
 
+    def get_absolute_url(self):
+        return reverse('nspContactos:urlDetalles', kwargs = {'pk': self.id})
 
 class Direccion(models.Model):
     contacto        = models.ForeignKey(Contacto)
