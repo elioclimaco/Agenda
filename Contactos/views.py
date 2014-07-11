@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.views.generic import View, ListView, CreateView, UpdateView, DeleteView, DetailView
 from django.core.urlresolvers import reverse
+from django.core.paginator import Paginator, EmptyPage, InvalidPage
 
 from .models import Contacto
+from .forms import *
 
 # Código básico de una vista basada en clases
 # from django.http import HttpResponse
@@ -14,11 +16,13 @@ from .models import Contacto
 class vstaListarContactos(ListView):
     model = Contacto
     template_name = 'contactos/listar.html'
+    paginate_by = 5
 
 
 class vstaNuevoContacto(CreateView):
     model = Contacto
     template_name = 'contactos/nuevo.html'
+    form_class = frmNuevoContacto
 
     # Sobre escribimos el método success_url para
     # redireccionar al usuario cuando el formulario
@@ -43,6 +47,7 @@ class vstaNuevoContacto(CreateView):
 class vstaEditarContacto(UpdateView):
     model = Contacto
     template_name = 'contactos/nuevo.html'
+    form_class = frmNuevoContacto
 
     def get_success_url(self):
         return reverse('nspContactos:urlListar')
@@ -70,3 +75,18 @@ class vstaBorrarContacto(DeleteView):
 class vstaDetallesContacto(DetailView):
     model = Contacto
     template_name = 'contactos/detalles.html'
+
+
+class vstaEditarDirecciones(UpdateView):
+    model = Contacto
+    template_name = 'contactos/editarDirecciones.html'
+    form_class = frmSetDireccionContacto
+
+    def get_success_url(self):
+        return self.get_object().get_absolute_url()
+
+    # def get_context_data(self, **kwargs):
+    #     contexto = super(vstaEditarDirecciones, self).get_context_data(**kwargs)
+    #     contacto = {'pk': self.get_object().id}
+    #     contexto
+    #     return reverse('nspContactos:urlEditarDirecciones')

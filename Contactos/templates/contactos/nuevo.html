@@ -1,5 +1,6 @@
 {% extends 'contactos/base.html' %}
 
+
 {% block Encabezado %}
     {# Cambiamos el encabezado del formulario #}
     {% if contacto.id %}
@@ -9,6 +10,7 @@
     {% endif %}
 {% endblock Encabezado %}
 
+
 {% block Contenido %}
     {% comment %}
     Usamos el procesador de contexto "action"
@@ -16,13 +18,27 @@
     NuevoContacto y EditarContacto, para
     redireccionar de acuerdo a la vista invocada
     {% endcomment %}
-    <form action="{{ action }}" method="POST">
-    {#<form action="{% url 'nspContactos:urlNuevo' %}" method="POST">#}
-        {% csrf_token %}
 
-        {{ form.as_p }}
+    <div class="panel-body">
+        {% load bootstrap %}
 
-        <input type="submit" value="Guardar" class="btn btn-success">
-    </form>
-    <a href="{% url 'nspContactos:urlListar' %}">Volver a la Lista</a>
+        <form action="{{ action }}" method="POST" role="form">
+        {#<form action="{% url 'nspContactos:urlNuevo' %}" method="POST">#}
+            {% csrf_token %}
+
+            <div class="form-group">
+                {{ form|bootstrap }}
+            </div>
+
+            <input type="submit" value="Guardar" class="btn btn-success">
+
+            {# Si se está editando un contacto #}
+            {% if contacto.id %}
+                <a href="{% url 'nspContactos:urlEditarDirecciones' pk=contacto.id %}" class="btn btn-primary">Direcciones</a>
+                <a href="{% url 'nspContactos:urlBorrar' pk=contacto.id %}" class="btn btn-danger">Eliminar</a>
+            {% endif %}
+
+            <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-warning">Cancelar</a>
+        </form>
+    </div>
 {% endblock Contenido %}

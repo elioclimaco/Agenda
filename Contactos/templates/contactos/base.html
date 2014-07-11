@@ -6,7 +6,8 @@
     <head>
         <title></title>
 
-        <link href="{% static 'contactos/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="screen">
+{#        <link href="{% static 'contactos/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="screen">#}
+        <link href="{% static 'contactos/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="screen">
         <link href="{% static 'contactos/css/bootstrap-theme.min.css' %}" rel="stylesheet" type="text/ccs" media="screen">
         <link href="{% static 'contactos/css/justified-nav.css' %}" rel="stylesheet">
         <link href="{% static 'contactos/css/personalizacion.css' %}" rel="stylesheet">
@@ -18,7 +19,7 @@
 
             <!-- Barra de Navegación -->
             <div class="masthead">
-                <h3 class="text-muted">Contactos del Poder Judicial</h3>
+                <h3 class="text-muted">Contactos en Django</h3>
 
                 <ul class="nav nav-justified">
                     <li class="active"><a href="#">Contactos</a></li>
@@ -59,6 +60,9 @@
 
                         {% block Contenido %}
                         {% endblock Contenido %}
+
+                        {% block Pie %}
+                        {% endblock Pie %}
                     </div>
 
                 </div>

@@ -23,3 +23,6 @@ class Direccion(models.Model):
 
     class Meta:
         unique_together = ('contacto', 'TipoDireccion',)
+
+    def __unicode__(self):
+        return ' '.join([self.TipoDireccion, self.Direccion,])

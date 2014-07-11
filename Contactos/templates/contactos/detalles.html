@@ -5,10 +5,26 @@
 {% endblock Encabezado %}
 
 {% block Contenido %}
-    <h3>{{ contacto }}</h3>
-    <br>
-    <p>Correo electrónico: {{ contacto.Email }}</p>
-    <br>
-    <br>
-    <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-primary">Lista de contactos</a>
+    <div class="panel-body">
+        <address>
+            <strong>{{ contacto }}</strong>
+            <br>
+            <a href="mailto:#">{{ contacto.Email }}</a>
+        </address>
+
+        <address>
+            <strong>AMAROK E.I.R.L</strong>
+            <br>
+            {% for d in contacto.direccion_set.all %}
+                {{ d.TipoDireccion }} {{ d.Direccion }}
+                <br>
+                {{ d.Ciudad }} {{ d.Provincia }}
+                <br>
+                {{ d.CodigoPostal }}
+                <hr>
+            {% endfor %}
+        </address>
+
+        <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-primary">Lista de contactos</a>
+    </div>
 {% endblock Contenido %}

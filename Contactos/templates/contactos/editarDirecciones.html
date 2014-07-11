@@ -1,0 +1,30 @@
+{% extends 'contactos/base.html' %}
+
+{% block Encabezado %}
+    Modificar las direcciones de {{ contacto }}
+{% endblock Encabezado %}
+
+{% block Contenido %}
+    <div class="panel-body">
+        {% load bootstrap %}
+
+        <div class="form-group">
+            <form action="{% url 'nspContactos:urlEditarDirecciones' pk=contacto.id %}" method="POST" role="form">
+                {% csrf_token %}
+
+                {{ form.management_form|bootstrap }}
+                {{ form|bootstrap }}
+
+{% comment %}                {% for d in form %}
+                    <ul>
+                        {{ d|bootstrap }}
+                    </ul>
+                    <hr>
+                {% endfor %}{% endcomment %}
+
+                <input type="submit" value="Guardar" class="btn btn-success">
+                <a href="{% url 'nspContactos:urlEditar' pk=contacto.id %}" class="btn btn-warning">Cancelar</a>
+            </form>
+        </div>
+    </div>
+{% endblock Contenido %}

@@ -6,7 +6,19 @@
 
 
 {% block Descripcion %}
-    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+    <div class="row">
+        <div class="col-lg-10">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
+        </div>
+
+        <div class="col-lg-2">
+            <a href="{% url 'nspContactos:urlNuevo' %}" class="btn btn-primary">
+{#                <span class="glyphicon glyphicon-plus"></span> Contacto#}
+                Agregar contacto
+            </a>
+        </div>
+    </div>
 {% endblock Descripcion %}
 
 
@@ -14,6 +26,7 @@
     <table class="table table-hover table-condensed table-bordered">
         <thead>
             <tr>
+                <td class="text-center"><strong>N°</strong></td>
                 <td colspan="3" class="text-center"><strong>Acciones</strong></td>
 
                 <td class="text-center"><strong>Nombres</strong></td>
@@ -22,10 +35,12 @@
         </thead>
 
         <tbody>
-
             {% if object_list %}
                 {% for c in object_list %}
                     <tr>
+                         <td class="text-center">
+                            {{ forloop.counter }}
+                         </td>
                         <td class="text-center">
                             <a href="{% url 'nspContactos:urlDetalles' pk=c.id %}" >
                                 <span class="glyphicon glyphicon-list primario"></span>
@@ -46,14 +61,53 @@
                     </tr>
                 {% endfor %}
             {% else %}
-                <h3>No existen contactos</h3>
+                No existen contactos
             {% endif %}
-
         </tbody>
     </table>
-
-
-    <a href = "{% url 'nspContactos:urlNuevo' %}">Agregar contacto</a>
-    <br>
-
 {% endblock Contenido %}
+
+
+{% block Pie %}
+    {% if is_paginated %}
+        <div class="panel-footer">
+            <ul class="pagination">
+                <li>
+                    <a href="/contactos?page=1" class="glyphicon glyphicon-step-backward"> </a>
+                </li>
+
+                {% if page_obj.has_previous %}
+                    <li>
+{#                        <a href="/contactos?page={{ page_obj.previous_page_number }}">&laquo;</a>#}
+                        <a href="/contactos?page={{ page_obj.previous_page_number }}" class="glyphicon glyphicon-backward"> </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" class="glyphicon glyphicon-backward"> </a>
+                    </li>
+                {% endif %}
+
+                <li class="disabled">
+                    <a href="" >Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</a>
+                </li>
+
+                {% if page_obj.has_next %}
+                    <li>
+{#                        <a href="/contactos?page={{ page_obj.next_page_number }}">&raquo;</a>#}
+                        <a href="/contactos?page={{ page_obj.next_page_number }}" class="glyphicon glyphicon-forward"> </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" class="glyphicon glyphicon-forward"> </a>
+                    </li>
+                {% endif %}
+
+                <li>
+                    <a href="/contactos?page={{ page_obj.paginator.num_pages }}" class="glyphicon glyphicon-step-forward"> </a>
+                </li>
+            </ul>
+        </div>
+    {% else %}
+        No se han encontrado registros
+    {% endif %}
+{% endblock Pie %}

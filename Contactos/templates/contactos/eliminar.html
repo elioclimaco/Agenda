@@ -5,14 +5,20 @@
 {% endblock Encabezado %}
 
 {% block Contenido %}
-    <p>
-        <b>{{ contacto }} será eliminado, esta seguro?</b>
-    </p>
+    <div class="panel-body">
 
-    <form action="{% url 'nspContactos:urlBorrar' pk=contacto.id %}" method="POST">
-        {% csrf_token %}
+        {# Muestra un mensaje de alerta #}
+        <div class="alert alert-danger">
+            "{{ contacto }}" será eliminado de la lista de contactos, esta seguro?</b>
+        </div>
 
-        <input type="submit" value="Eliminar" class="btn btn-danger">
-        <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-success">Cancelar</a>
-    </form>
+        {% load bootstrap %}
+
+        <form action="{% url 'nspContactos:urlBorrar' pk=contacto.id %}" method="POST" role="form">
+            {% csrf_token %}
+
+            <input type="submit" value="Eliminar" class="btn btn-danger">
+            <a href="{% url 'nspContactos:urlListar' %}" class="btn btn-success">Cancelar</a>
+        </form>
+    </div>
 {% endblock Contenido %}
